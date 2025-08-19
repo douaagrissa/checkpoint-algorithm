@@ -1,0 +1,35 @@
+ALGORITHM sentence
+VAR 
+ longeur, vowels,wordscount,i,j ,k:INTEGER;
+ sentence:STRING;
+BEGIN
+write ("saisie une phrase qui finit par point ");
+read(sentence);
+longeur:= 0;
+i:=0;
+WHILE ((sentence[i])<>'.' )DO
+    longeur++;
+    i++;
+END_WHILE
+write("la longueur est :",longeur);
+j:=0;
+vowels := 0;
+WHILE ((sentence[j]=='a') ||(sentence[j]=='o')||(sentence[j]=='y')||(sentence[j]=='i'||(sentence[j]=='e')||(sentence[j]=='u'))DO
+    vowels++;
+    j++;
+END_WHILE
+write ("la nombre de voyelle est",vowels);
+wordscount = 0;
+k=0;
+WHILE ((sentence[k])<> '.' )) DO
+IF (sentence[k]==' ')) THEN
+    wordscount++ ;
+    k++;
+ELSE
+    k++;
+END_IF
+
+END_WHILE
+write("wordscount est",wordscount);
+END
+
